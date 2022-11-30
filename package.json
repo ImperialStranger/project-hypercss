@@ -1,0 +1,21 @@
+{
+  "name": "hypercss",
+  "version": "1.0.0",
+  "description": "CSS is made easy and fast.",
+  "scripts": {
+    "test": "sass --watch ./scss/hyper.scss ./css/hyper.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImperialStranger/project-hypercss.git"
+  },
+  "author": "Nabil Sadik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImperialStranger/project-hypercss/issues"
+  },
+  "homepage": "https://github.com/ImperialStranger/project-hypercss#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

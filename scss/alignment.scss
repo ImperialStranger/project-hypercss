@@ -1,0 +1,7 @@
+$valigns: ('top', 'middle', 'bottom', 'baseline', 'text-top', 'text-bottom');
+
+@each $valign in $valigns {
+  .valign-#{$valign} {
+    vertical-align: #{$valign} !important;
+  }
+}

@@ -1,0 +1,22 @@
+// Text Selection
+
+$user-select: (all, auto, none);
+
+@each $value in $user-select {
+  .user-select-#{$value} {
+    user-select: $value;
+    -webkit-user-select: $value !important;
+    -moz-user-select: $value !important;
+    -ms-user-select: $value !important;
+  }
+}
+
+// Pointer events
+
+$pointer-events: (auto, none);
+
+@each $value in $pointer-events {
+  .pe-#{$value} {
+    pointer-events: $value !important;
+  }
+}

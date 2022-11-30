@@ -1,0 +1,239 @@
+// Margin
+
+$spacers: (
+        0: 0,
+        1: 0.25,
+        2: 0.5,
+        3: 1,
+        4: 1.5,
+        5: 3,
+        auto: auto,
+);
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+        .m-#{$margin} {
+            margin: $value !important;
+        }
+    }
+    @else {
+        .m-#{$margin} {
+            margin: #{$value}rem !important;
+        }
+    }
+}
+
+// Left Margin
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+        .ml-#{$margin} {
+            margin: $value !important;
+        }
+    }
+
+    @else {
+        .ml-#{$margin} {
+            margin: #{$value}rem !important;
+        }
+    }
+}
+
+// Right Margin
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+       .mr-#{$margin} {
+            margin-right: $value !important;
+        }
+    }
+    @else { 
+       .mr-#{$margin} {
+        margin-right: #{$value}rem !important;
+        }
+    }
+}
+
+// X Margin
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+       .mx-#{$margin} {
+            margin-left: $value !important;
+            margin-right: $value !important;
+        }
+    }
+    @else {
+       .mx-#{$margin} {
+            margin-left: #{$value}rem !important;
+            margin-right: #{$value}rem !important;
+        }
+    }
+}
+
+// Top margin
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+       .mt-#{$margin} {
+            margin-top: $value !important;
+        }
+    }
+    @else {
+        .mt-#{$margin} {
+            margin-top: #{$value}rem !important;
+        }
+    }
+}
+
+// Bottom margin
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+      .mb-#{$margin} {
+            margin-bottom: $value!important;
+        }
+    }
+    @else {
+        .mb-#{$margin} {
+            margin-bottom: #{$value}rem!important;
+        }
+    }
+}
+
+// Y Margin
+
+@each $margin, $value in $spacers {
+    @if $value == auto {
+       .my-#{$margin} {
+            margin-top: $value !important;
+            margin-bottom: $value !important;
+        }
+    }
+    @else {
+        .my-#{$margin} {
+            margin-top: #{$value}rem !important;
+            margin-bottom: #{$value}rem !important;
+        }
+    }
+}
+
+// Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .p-#{$padding} {
+            padding: $value!important;
+        }
+    }
+    @else {
+       .p-#{$padding} {
+        padding: #{$value}rem !important;
+        }
+    }
+}
+
+// Left Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .pl-#{$padding} {
+            padding-left: $value !important;
+        }
+    }
+    @else {
+        .pl-#{$padding} {
+            padding-left: #{$value}rem !important;
+        }
+    }
+}
+
+// Right Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .pr-#{$padding} {
+            padding-left: $value !important;
+       }
+    }
+    @else {
+       .pr-#{$padding} {
+            padding-left: #{$value}rem !important;
+        }
+    }
+}
+
+// Top Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .pt-#{$padding} {
+            padding-top: $value !important;
+        }
+    }
+    @else {
+        .pt-#{$padding} {
+            padding-top: #{$value}rem !important;
+        }
+    }
+}
+
+// Bottom Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .pb-#{$padding} {
+            padding-bottom: $value !important;
+        }
+    }
+    @else {
+        .pb-#{$padding} {
+            padding-bottom: #{$value}rem!important;
+        }
+    }
+}
+
+// X Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .px-#{$padding} {
+            padding-left: $value !important;
+            padding-right: $value !important;
+        }
+    }
+    @else {
+        .px-#{$padding} {
+            padding-left: #{$value}rem !important;
+            padding-right: #{$value}rem !important;
+        }
+    }
+}
+
+// Y Padding
+
+@each $padding, $value in $spacers {
+    @if $value == auto {
+       .py-#{$padding} {
+            padding-top: $value !important;
+            padding-bottom: $value !important;
+        }
+    }
+    @else {
+       .py-#{$padding} {
+            padding-top: #{$value}rem !important;
+            padding-bottom: #{$value}rem !important;
+        }
+    }
+}
+
+// Gap 
+
+@each $gap, $value in $spacers {
+    @if $value == auto {
+       @warn "Automatic gap system doesn't exist in real CSS.";
+    }
+    .gap-#{$gap} {
+        gap: #{$value}rem !important;
+    }
+}    
