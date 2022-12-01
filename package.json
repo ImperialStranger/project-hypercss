@@ -1,6 +1,6 @@
 {
   "name": "hypercss",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "CSS is made easy and fast.",
   "scripts": {
     "test": "sass --watch ./scss/hyper.scss ./css/hyper.css"
