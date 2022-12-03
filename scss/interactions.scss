@@ -20,3 +20,13 @@ $pointer-events: (auto, none);
     pointer-events: $value !important;
   }
 }
+
+// Scroll Behavior
+
+$scroll-behaviors: (auto, smooth);
+
+@each $behaviour in $scroll-behaviors {
+  .sb-#{$behaviour} {
+    scroll-behavior: $behaviour;
+  }
+}

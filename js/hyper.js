@@ -1,14 +1,19 @@
 const pattern = /(#CommonStyle)-(\w+){(.*?)}/g;
 
 function openCSS(url, callback) {
-    var cssLoader = new XMLHttpRequest()
-    cssLoader.onreadystatechange = function () {
+    try {
+        var cssLoader = new XMLHttpRequest()
+        cssLoader.onreadystatechange = function () {
         if (cssLoader.readyState === 4 && cssLoader.status === 200) {
             callback(cssLoader.responseText);
         };
     };
     cssLoader.open('GET', url, true);
     cssLoader.send();
+        
+    } catch (error) {
+        return 0;
+    }
 }
 
 function loadCommonStyleElements() { 
@@ -45,9 +50,18 @@ function applyCommnStyleClassSet() {
     }
 }
 
-function executeAll() { 
-    applyCommonStyle();
-    applyCommnStyleClassSet();
+function applyAspectRatio() {
+    var arElements = document.querySelectorAll("[aspect-ratio]");
+    for (var i = 0; i < arElements.length; i++) { 
+        var aspect_ratio = arElements[i].getAttribute("aspect-ratio");
+        arElements[i].style.aspectRatio = aspect_ratio;
+        arElements[i].removeAttribute("aspect-ratio");
+    }
 }
 
-window.addEventListener("load", executeAll);
+
+window.addEventListener("load", function () {
+    applyCommonStyle();
+    applyCommnStyleClassSet();
+    applyAspectRatio();
+});

@@ -1,7 +1,17 @@
-$valigns: ('top', 'middle', 'bottom', 'baseline', 'text-top', 'text-bottom');
+$valigns: ("top", "middle", "bottom", "baseline", "text-top", "text-bottom");
 
 @each $valign in $valigns {
   .valign-#{$valign} {
     vertical-align: #{$valign} !important;
+  }
+}
+
+// Align Items
+
+$aligns: ("center", "start", "end", "flex-start", "flex-end", "baseline");
+
+@each $align in $aligns {
+  .ai-#{$align} {
+    align-items: #{$align};
   }
 }

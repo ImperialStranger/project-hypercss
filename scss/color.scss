@@ -1,0 +1,19 @@
+$color-preset: (
+  success: #1b5e20,
+  warning: #f9a825,
+  danger: #b71c1c,
+  info: #0d47a1,
+  muted: #263238,
+);
+
+@each $preset, $color in $color-preset {
+  .bg-#{$preset} {
+    background-color: $color;
+  }
+  .text-#{$preset} {
+    color: $color;
+  }
+  .border-#{$preset} {
+    border-color: $color;
+  }
+}
