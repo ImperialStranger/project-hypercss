@@ -81,4 +81,4 @@ The `close-btn` class will turn them into close buttons.
 ```
 Now it will start functioning.
 
-![Closer Example](https://github.com/ImperialStranger/project-hypercss/vid/closer.mkv)
+![Closer Example](https://github.com/ImperialStranger/project-hypercss/tree/main/vid/closer.mkv)
