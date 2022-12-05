@@ -59,9 +59,19 @@ function applyAspectRatio() {
     }
 }
 
+function handleClose() {
+    var close_buttons = document.querySelectorAll(".close-btn");
+    for (let i = 0; i < close_buttons.length; i++) {
+        close_buttons[i].addEventListener("click", function () {
+            this.parentElement.style.display = "none";
+        });
+        
+    }
+}
 
 window.addEventListener("load", function () {
     applyCommonStyle();
     applyCommnStyleClassSet();
     applyAspectRatio();
+    handleClose();
 });
