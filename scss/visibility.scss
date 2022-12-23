@@ -1,7 +1,0 @@
-$visibility-vars: ("visible": visible, "invisible": hidden);
-
-@each $visibility, $value in $visibility-vars {
-  .#{$visibility} {
-    visibility: $value !important;
-  }
-} 
