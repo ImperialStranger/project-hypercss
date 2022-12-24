@@ -1,9 +1,41 @@
+/*
+* $v-class: Visibility Class
+* $v-value: Styles applied for visibility Value classes
+*/
 .visible {
   visibility: visible !important;
 }
 
+/*
+* $v-class: Visibility Class
+* $v-value: Styles applied for visibility Value classes
+*/
 .invisible {
   visibility: hidden !important;
+}
+
+.valign-baseline {
+  vertical-align: baseline !important;
+}
+
+.valign-top {
+  vertical-align: top !important;
+}
+
+.valign-middle {
+  vertical-align: middle !important;
+}
+
+.valign-bottom {
+  vertical-align: bottom !important;
+}
+
+.valign-text-top {
+  vertical-align: text-top !important;
+}
+
+.valign-text-bottom {
+  vertical-align: text-bottom !important;
 }
 
 /*# sourceMappingURL=hyper.css.map */

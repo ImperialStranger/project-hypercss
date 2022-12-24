@@ -5,6 +5,11 @@ $visibility-classes: (
   ".invisible": hidden,
 );
 
+/*
+  * $v-class: Visibility Class
+  * $v-value: Styles applied for visibility Value classes
+*/
+
 @each $v-class, $v-value in $visibility-classes {
   #{$v-class} {
     visibility: $v-value !important;

@@ -1,0 +1,18 @@
+// Alignment
+
+// Vertical Alignment
+
+$vertical-align: (
+  "baseline": baseline,
+  "top": top,
+  "middle": middle,
+  "bottom": bottom,
+  "text-top": text-top,
+  "text-bottom": text-bottom,
+);
+
+@each $valign-class, $valign-value in $vertical-align {
+  .valign-#{$valign-class} {
+    vertical-align: $valign-value !important;
+  }
+}
