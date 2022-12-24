@@ -1,0 +1,23 @@
+{
+  "name": "hypercss",
+  "version": "1.0.0",
+  "description": "CSS is made easy and fast. Easy like Bootstrap, but gives you freedom to make custom styles.",
+  "main": "common-style-url.js",
+  "scripts": {
+    "test": "sass src/input.scss dist/hyper.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImperialStranger/project-hypercss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImperialStranger/project-hypercss/issues"
+  },
+  "homepage": "https://github.com/ImperialStranger/project-hypercss#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

@@ -1,0 +1,12 @@
+// Visibility
+
+$visibility-classes: (
+  ".visible": visible,
+  ".invisible": hidden,
+);
+
+@each $v-class, $v-value in $visibility-classes {
+  #{$v-class} {
+    visibility: $v-value !important;
+  }
+}
