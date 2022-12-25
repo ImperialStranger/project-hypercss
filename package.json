@@ -4,7 +4,8 @@
   "description": "CSS is made easy and fast. Easy like Bootstrap, but gives you freedom to make custom styles.",
   "main": "common-style-url.js",
   "scripts": {
-    "test": "sass src/input.scss dist/hyper.css"
+    "buld:css": "sass src/scss/hyper.scss dist/css/hyper.css",
+    "build:js": "tsc"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/ImperialStranger/project-hypercss#readme",
   "dependencies": {
     "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
   }
 }
