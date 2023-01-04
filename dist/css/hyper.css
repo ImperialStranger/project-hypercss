@@ -1,15 +1,11 @@
 /*
-* $v-class: Visibility Class
-* $v-value: Styles applied for visibility Value classes
+  * $v-class: Visibility Class
+  * $v-value: Styles applied for visibility Value classes
 */
 .visible {
   visibility: visible !important;
 }
 
-/*
-* $v-class: Visibility Class
-* $v-value: Styles applied for visibility Value classes
-*/
 .invisible {
   visibility: hidden !important;
 }
@@ -36,6 +32,24 @@
 
 .valign-text-bottom {
   vertical-align: text-bottom !important;
+}
+
+.force-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-end {
+  text-align: right !important;
 }
 
 /*# sourceMappingURL=hyper.css.map */

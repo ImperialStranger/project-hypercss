@@ -16,3 +16,13 @@ $vertical-align: (
     vertical-align: $valign-value !important;
   }
 }
+
+@mixin force-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.force-center {
+  @include force-center;
+}

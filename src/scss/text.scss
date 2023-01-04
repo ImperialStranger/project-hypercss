@@ -1,0 +1,13 @@
+// Text Align
+
+$text-align: (
+  "start": left,
+  "center": center,
+  "end": right,
+);
+
+@each $ta, $value in $text-align {
+  .text-#{$ta} {
+    text-align: $value !important;
+  }
+}
