@@ -12,6 +12,7 @@ Just download the `hyper.min.css`, `hyper.min.js` and `hyper.css.map` file. Inse
 
 1. [Vertical Align](https://github.com/ImperialStranger/project-hypercss/doc/css/vertical-align.md)
 2. [Visibility](https://github.com/ImperialStranger/project-hypercss/doc/css/visibility.md)
+3. [Text Align](https://github.com/ImperialStranger/project-hypercss/doc/css/text-align.md)
 
 ## JavaScript
 
